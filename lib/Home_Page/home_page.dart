@@ -32,7 +32,7 @@ class _HomePageState extends State<HomePage> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text("Level 1", style: TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.bold)),
-                        Text("Poin 1000", style: TextStyle(color: Colors.yellowAccent, fontSize: 14)),
+                        Text("Poin 1000", style: TextStyle(color: Colors.yellow.shade700, fontSize: 14)),
                       ],
                     ),
                     CircleAvatar(
@@ -55,7 +55,7 @@ class _HomePageState extends State<HomePage> {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   _buildNavigationButton("Big Quest", Colors.red, Icons.book, context, BigQuestPage(), Colors.white),
-                  _buildNavigationButton("    Shop     ", Colors.blue.shade900, Icons.shopping_bag, context, ShopPage(), Colors.amber),
+                  _buildNavigationButton("    Shop    ", Colors.blue.shade900, Icons.shopping_bag, context, ShopPage(), Colors.yellow.shade700),
                 ],
               ),
             ],
@@ -71,7 +71,7 @@ class _HomePageState extends State<HomePage> {
       style: ElevatedButton.styleFrom(
         backgroundColor: color,
         padding: EdgeInsets.symmetric(vertical: 20, horizontal: 32),
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
       ),
       onPressed: () {
         Navigator.push(
