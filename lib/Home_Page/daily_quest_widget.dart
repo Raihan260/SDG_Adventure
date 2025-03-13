@@ -42,7 +42,7 @@ class _DailyQuestWidgetState extends State<DailyQuestWidget> {
       padding: EdgeInsets.all(8),
       decoration: BoxDecoration(
         color: Colors.yellow.shade700,
-        borderRadius: BorderRadius.circular(12),
+        borderRadius: BorderRadius.circular(16),
       ),
       child: Column(
         children: List.generate(questList.length, (index) {
@@ -50,7 +50,7 @@ class _DailyQuestWidgetState extends State<DailyQuestWidget> {
             margin: EdgeInsets.symmetric(vertical: 5, horizontal: 5),
             padding: EdgeInsets.all(6),
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(12),
+              borderRadius: BorderRadius.circular(8),
               color: Colors.blue.shade900,
             ),
             child: Row(
@@ -66,7 +66,7 @@ class _DailyQuestWidgetState extends State<DailyQuestWidget> {
                       children: [
                         Text("XP ${questList[index].xp}", style: TextStyle(color: Colors.white, fontSize: 14)),
                         SizedBox(width: 10),
-                        Text("Poin ${questList[index].points}", style: TextStyle(color: Colors.amber, fontSize: 14, fontWeight: FontWeight.bold)),
+                        Text("Poin ${questList[index].points}", style: TextStyle(color: Colors.yellow.shade700, fontSize: 14,)),
                       ],
                     ),
                   ],
