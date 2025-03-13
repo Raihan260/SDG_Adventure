@@ -27,7 +27,7 @@ class _BottomNavScreenState extends State<BottomNavScreen> {
           topRight: Radius.circular(20),
         ),
         child: BottomNavigationBar(
-          backgroundColor: Colors.yellow,
+          backgroundColor: Colors.yellow.shade700,
           currentIndex: _currentIndex,
           onTap: (index) {
             setState(() {
@@ -38,16 +38,16 @@ class _BottomNavScreenState extends State<BottomNavScreen> {
           unselectedItemColor: Colors.black,
           items: [
             BottomNavigationBarItem(
-              icon: Icon(Icons.home),
-              label: 'Home',
+              icon: Icon(Icons.home, size: 50,),
+              label: '',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.search),
-              label: 'Search',
+              icon: Icon(Icons.search, size: 50,),
+              label: '',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.person),
-              label: 'Profile',
+              icon: Icon(Icons.person, size: 50,),
+              label: '',
             ),
           ],
         ),
